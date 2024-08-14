@@ -1,0 +1,93 @@
+.recipes-container {
+  margin-inline: 20px;
+}
+
+.recipe-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin-block: 20px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 300px;
+  }
+
+  .wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    svg {
+      fill: #c0392b;
+      font-size: 30px;
+    }
+  }
+
+  .recipe-details {
+    padding: 10px;
+
+    h2 {
+      color: #e74c3c;
+      font-size: 20px;
+      text-align: center;
+      margin-block: 15px;
+    }
+
+    h6 {
+      color: #60a5fa;
+      font-size: 16px;
+      margin-block: 15px;
+    }
+  }
+
+  .recipe-footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #60a5fa;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 576px) {
+  .recipes-container {
+    margin-inline: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-inline: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-inline: 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .recipes-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin-inline: 100px;
+  }
+}

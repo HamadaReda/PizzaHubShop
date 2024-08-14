@@ -1,0 +1,17 @@
+footer {
+  background-color: #60a5fa;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .developer a {
+  color: inherit;
+}
+
+footer .developer a:hover {
+  color: white;
+  font-weight: bold;
+}
